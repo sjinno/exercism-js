@@ -1,6 +1,5 @@
-import { colorCode } from '../resistor-color/resistor-color';
+import { COLORS } from '../resistor-color/resistor-color';
 
 export const decodedValue = (colorDuo) => {
-    let [first, second] = colorDuo.slice(0, 2).map((c) => colorCode(c));
-    return 10 * first + second;
+    return 10 * COLORS.indexOf(colorDuo[0]) + COLORS.indexOf(colorDuo[1]);
 };
