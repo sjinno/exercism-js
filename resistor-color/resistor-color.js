@@ -1,5 +1,5 @@
 export const colorCode = (color) => {
-    return COLORS.findIndex((c) => c === color);
+    return COLORS.indexOf(color);
 };
 
 export const COLORS = [
